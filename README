@@ -1,0 +1,9 @@
+This application will allow you to track players in steam games, as long as the user has a public profile.
+
+How to use
+==========
+1) Go to users profile. Right click and copy page url
+2) Paste Url into input field. Hit Track Player
+
+Users will show up in list view after added. Double click user to copy ip address. User's row will change 
+color if their server ip changes.
