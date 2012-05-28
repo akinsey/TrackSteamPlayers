@@ -437,8 +437,8 @@ namespace TrackSteamPlayers
                 {
                     string headerText = header.Text;
                
-                    if(header.Text.Contains("\u25BC")) headerText = header.Text.Split('\u25BC')[1];
-                    else if(header.Text.Contains("\u25B2")) headerText = header.Text.Split('\u25B2')[1];
+                    if(header.Text.Contains("\u25BC")) headerText = header.Text.Split('\u25BC')[1].Trim();
+                    else if(header.Text.Contains("\u25B2")) headerText = header.Text.Split('\u25B2')[1].Trim();
                
                     header.Text = headerText;
                 }
