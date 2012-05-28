@@ -100,6 +100,7 @@ namespace TrackSteamPlayers
                 progressBar.MarqueeAnimationSpeed = 10;
             }
             trackPlayer.Enabled = false;
+            profileInput.Enabled = false;
             Thread thread = new Thread(new ParameterizedThreadStart(getSteamIdFromUrl));
             thread.IsBackground = true;
             thread.Name = "Get Steam ID Thread";
@@ -208,6 +209,10 @@ namespace TrackSteamPlayers
                     {
                         playerTable.Items.Find(steamId, false)[0].BackColor = Color.LightGreen;
                     }
+                    else
+                    {
+                        playerTable.Items.Find(steamId, false)[0].BackColor = Color.White;
+                    }
                     wasUpdated = true;
                 }
                 if (wasUpdated) Console.WriteLine(">>>> Updating row for player [" + steamId + "]");
@@ -217,6 +222,7 @@ namespace TrackSteamPlayers
                 playerTable.Items.Add(param);
                 stopProgressBar();
                 trackPlayer.Enabled = true;
+                profileInput.Enabled = true;
                 Console.WriteLine(">>>> Adding row for player [" + steamId + "]");
             }
         }
@@ -321,6 +327,7 @@ namespace TrackSteamPlayers
                         string serverIp = playerTable.Items[i].SubItems[2].Text;
                         Clipboard.Clear();
                         if(!string.IsNullOrEmpty(serverIp)) Clipboard.SetText(serverIp);
+                        playerTable.SelectedItems.Clear();
                         break;
                     }
                 }
@@ -388,6 +395,7 @@ namespace TrackSteamPlayers
                 {
                     stopProgressBar();
                     trackPlayer.Enabled = true;
+                    profileInput.Enabled = true;
                     return;
                 }
                 steamIdList.Add(id);
@@ -451,6 +459,15 @@ namespace TrackSteamPlayers
             foreach (ListViewItem selected in selectionArr)
             {
                 if(selected.BackColor == Color.LightGreen) selected.BackColor = Color.White;
+            }
+        }
+
+        private void profileInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                trackPlayer.PerformClick();
+                e.SuppressKeyPress = true;
             }
         }
     }

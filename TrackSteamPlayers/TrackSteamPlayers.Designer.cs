@@ -51,6 +51,7 @@
             this.profileInput.Size = new System.Drawing.Size(365, 20);
             this.profileInput.TabIndex = 1;
             this.profileInput.Click += new System.EventHandler(this.profileInput_Click);
+            this.profileInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.profileInput_KeyDown);
             // 
             // profileLabel
             // 
@@ -66,13 +67,13 @@
             // trackPlayer
             // 
             this.trackPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackPlayer.Image = global::TrackSteamPlayers.Properties.Resources.target;
+            this.trackPlayer.Image = global::TrackSteamPlayers.Properties.Resources.find;
             this.trackPlayer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.trackPlayer.Location = new System.Drawing.Point(458, 8);
             this.trackPlayer.Name = "trackPlayer";
             this.trackPlayer.Size = new System.Drawing.Size(97, 23);
             this.trackPlayer.TabIndex = 3;
-            this.trackPlayer.Text = "Track Player";
+            this.trackPlayer.Text = "Track Player ";
             this.trackPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.trackPlayer.UseVisualStyleBackColor = true;
             this.trackPlayer.Click += new System.EventHandler(this.trackPlayer_Click);

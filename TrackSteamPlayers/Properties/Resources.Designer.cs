@@ -73,12 +73,5 @@ namespace TrackSteamPlayers.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        internal static System.Drawing.Bitmap target {
-            get {
-                object obj = ResourceManager.GetObject("target", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
