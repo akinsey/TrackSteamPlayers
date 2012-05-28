@@ -45,7 +45,7 @@ namespace TrackSteamPlayers
             lvwColumnSorter.Order = SortOrder.Ascending;
             playerTable.Sort();
             ColumnHeader header = playerTable.Columns[0];
-            header.Text = "\u25BC " + header.Text;
+            header.Text = "\u25B2 " + header.Text;
         }
 
         private void TrackSteamPlayers_Load(object sender, EventArgs e)
