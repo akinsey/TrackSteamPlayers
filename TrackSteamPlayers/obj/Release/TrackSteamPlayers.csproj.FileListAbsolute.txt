@@ -1,0 +1,8 @@
+C:\Users\akinsey\Documents\Visual Studio 11\Projects\TrackSteamPlayers\TrackSteamPlayers\bin\Release\TrackSteamPlayers.exe.config
+C:\Users\akinsey\Documents\Visual Studio 11\Projects\TrackSteamPlayers\TrackSteamPlayers\bin\Release\TrackSteamPlayers.db
+C:\Users\akinsey\Documents\Visual Studio 11\Projects\TrackSteamPlayers\TrackSteamPlayers\bin\Release\TrackSteamPlayers.exe
+C:\Users\akinsey\Documents\Visual Studio 11\Projects\TrackSteamPlayers\TrackSteamPlayers\obj\Release\TrackSteamPlayers.Properties.Resources.resources
+C:\Users\akinsey\Documents\Visual Studio 11\Projects\TrackSteamPlayers\TrackSteamPlayers\obj\Release\TrackSteamPlayers.TrackSteamPlayers.resources
+C:\Users\akinsey\Documents\Visual Studio 11\Projects\TrackSteamPlayers\TrackSteamPlayers\obj\Release\TrackSteamPlayers.csproj.GenerateResource.Cache
+C:\Users\akinsey\Documents\Visual Studio 11\Projects\TrackSteamPlayers\TrackSteamPlayers\obj\Release\TrackSteamPlayers.exe
+C:\Users\akinsey\Documents\Visual Studio 11\Projects\TrackSteamPlayers\TrackSteamPlayers\obj\Release\TrackSteamPlayers.csprojResolveAssemblyReference.cache
